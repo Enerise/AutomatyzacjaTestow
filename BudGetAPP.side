@@ -1,0 +1,229 @@
+{
+  "id": "adb7af56-be36-43d5-855f-704adce3011c",
+  "version": "2.0",
+  "name": "BudGetAPP",
+  "url": "https://budget.magdalena-brodala.profesjonalnyprogramista.pl/",
+  "tests": [{
+    "id": "e4a9e7bf-1484-4920-bc5e-e77432dc335d",
+    "name": "logowanie",
+    "commands": [{
+      "id": "ea74b874-841e-40f7-b610-6f2bdaad083d",
+      "comment": "",
+      "command": "open",
+      "target": "https://budget.magdalena-brodala.profesjonalnyprogramista.pl/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5fbab848-2e9f-49d3-8567-f25d8f568e16",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1050x708",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "db894f56-0d77-4066-9823-e2baed335cf6",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Zaloguj się",
+      "targets": [
+        ["linkText=Zaloguj się", "linkText"],
+        ["css=.btn-outline-primary", "css:finder"],
+        ["xpath=//a[contains(text(),'Zaloguj się')]", "xpath:link"],
+        ["xpath=//div[@id='navbarSupportedContent']/div[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/login')]", "xpath:href"],
+        ["xpath=//div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Zaloguj się')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "26db3597-1278-4f44-b68e-9454f0f95f76",
+      "comment": "",
+      "command": "click",
+      "target": "id=inputEmail",
+      "targets": [
+        ["id=inputEmail", "id"],
+        ["name=email", "name"],
+        ["css=#inputEmail", "css:finder"],
+        ["xpath=//input[@id='inputEmail']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "caaed013-45b0-47a3-88f5-e6401f18b433",
+      "comment": "",
+      "command": "type",
+      "target": "id=inputEmail",
+      "targets": [
+        ["id=inputEmail", "id"],
+        ["name=email", "name"],
+        ["css=#inputEmail", "css:finder"],
+        ["xpath=//input[@id='inputEmail']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "testowanie.strony@wp.pl"
+    }, {
+      "id": "8dcc535b-51b5-4cce-902e-2227a12be3c0",
+      "comment": "",
+      "command": "click",
+      "target": "id=inputPassword",
+      "targets": [
+        ["id=inputPassword", "id"],
+        ["name=password", "name"],
+        ["css=#inputPassword", "css:finder"],
+        ["xpath=//input[@id='inputPassword']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "15b69631-e947-43fb-8157-91cd08ed1de6",
+      "comment": "",
+      "command": "type",
+      "target": "id=inputPassword",
+      "targets": [
+        ["id=inputPassword", "id"],
+        ["name=password", "name"],
+        ["css=#inputPassword", "css:finder"],
+        ["xpath=//input[@id='inputPassword']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "test11122"
+    }, {
+      "id": "12cadc50-c1c4-4537-947a-7adab02fcea6",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-px-4",
+      "targets": [
+        ["css=.btn-px-4", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[4]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Zaloguj się')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7b19397c-20b2-477f-885a-7a9c46a31ea8",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.alert",
+      "targets": [
+        ["css=.alert", "css:finder"],
+        ["xpath=//div[2]", "xpath:position"],
+        ["xpath=//div[contains(.,'Logowanie zakończone sukcesem')]", "xpath:innerText"]
+      ],
+      "value": "Logowanie zakończone sukcesem"
+    }]
+  }, {
+    "id": "f1c58f41-b1ed-4ea0-81d3-316cc7095f91",
+    "name": "Poprawne_logowanie",
+    "commands": [{
+      "id": "4dff9f2b-acb5-4376-ab1b-f40d55392b1d",
+      "comment": "",
+      "command": "open",
+      "target": "https://budget.magdalena-brodala.profesjonalnyprogramista.pl/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "12400509-e2ee-4257-81b2-d8af8f9d3ba6",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1050x708",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d5b16f87-6689-4493-98ea-a799a88c1668",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Zaloguj się",
+      "targets": [
+        ["linkText=Zaloguj się", "linkText"],
+        ["css=.btn-outline-primary", "css:finder"],
+        ["xpath=//a[contains(text(),'Zaloguj się')]", "xpath:link"],
+        ["xpath=//div[@id='navbarSupportedContent']/div[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/login')]", "xpath:href"],
+        ["xpath=//div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Zaloguj się')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f5c5f6ac-7fa8-4a2a-8b82-8a727f896980",
+      "comment": "",
+      "command": "click",
+      "target": "id=inputEmail",
+      "targets": [
+        ["id=inputEmail", "id"],
+        ["name=email", "name"],
+        ["css=#inputEmail", "css:finder"],
+        ["xpath=//input[@id='inputEmail']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "54fcda25-38a0-4509-a205-d19852644d44",
+      "comment": "",
+      "command": "type",
+      "target": "id=inputEmail",
+      "targets": [
+        ["id=inputEmail", "id"],
+        ["name=email", "name"],
+        ["css=#inputEmail", "css:finder"],
+        ["xpath=//input[@id='inputEmail']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "testowanie.strony@wp.pl"
+    }, {
+      "id": "98bada15-3d07-4c93-a795-717d214695f9",
+      "comment": "",
+      "command": "click",
+      "target": "id=inputPassword",
+      "targets": [
+        ["id=inputPassword", "id"],
+        ["name=password", "name"],
+        ["css=#inputPassword", "css:finder"],
+        ["xpath=//input[@id='inputPassword']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8b00393b-88aa-46e0-9486-44e9f54f6389",
+      "comment": "",
+      "command": "type",
+      "target": "id=inputPassword",
+      "targets": [
+        ["id=inputPassword", "id"],
+        ["name=password", "name"],
+        ["css=#inputPassword", "css:finder"],
+        ["xpath=//input[@id='inputPassword']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "test11"
+    }, {
+      "id": "d2271937-9d38-48ab-bcee-8b6656ff87ec",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-px-4",
+      "targets": [
+        ["css=.btn-px-4", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[4]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Zaloguj się')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8b579672-d6f3-406f-b397-b59d8d94b1af",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.alert",
+      "targets": [],
+      "value": "Logowanie zakończone sukcesem"
+    }]
+  }],
+  "suites": [{
+    "id": "bf36b465-e9bd-4ba8-b375-9ce57ea92b62",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["e4a9e7bf-1484-4920-bc5e-e77432dc335d"]
+  }],
+  "urls": ["https://budget.magdalena-brodala.profesjonalnyprogramista.pl/"],
+  "plugins": []
+}

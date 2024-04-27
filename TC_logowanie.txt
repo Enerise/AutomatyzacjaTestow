@@ -1,0 +1,6 @@
+Przypadek testowy 1: Poprawne logowanie
+Krok 1: Przejdź do strony: Logowanie (profesjonalnyprogramista.pl)
+Krok 2: Wprowadź poprawny adres email 
+Krok 3: Wprowadź poprawny adres hasło
+Krok 4: Naciśnij przycisk „Zaloguj się”
+Oczekiwany rezultat: Przejście do strony użytkownika
